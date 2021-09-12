@@ -1,25 +1,33 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import { BrowserRouter, Route, Switch } from 'react-router-dom'
+import routes from './Routing/routes'
+import Wrapper from './Components/Wrapper'
+import { ThemeProvider } from './theme/themeContext'
+// const queryClient = new QueryClient();
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <React.Fragment>
+            {/* <QueryClientProvider client={queryClient}> */}
+            <BrowserRouter>
+                <ThemeProvider>
+                    <Wrapper>
+                        <Switch>
+                            {routes.map((route) => (
+                                <Route
+                                    key={route.map}
+                                    exact={route.exact}
+                                    path={route.path}
+                                    render={() => <route.component />}
+                                />
+                            ))}
+                        </Switch>
+                    </Wrapper>
+                </ThemeProvider>
+            </BrowserRouter>
+            {/* </QueryClientProvider> */}
+        </React.Fragment>
+    )
 }
 
-export default App;
+export default App
