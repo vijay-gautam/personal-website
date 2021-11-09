@@ -42,7 +42,7 @@ function LatestProject({ latestProjectRef }) {
                                 alt="project hero"
                                 className="w-full"
                             />
-                            <p className="font-epl text-4xl">To Do List</p>
+                            <p className="font-epl text-4xl">Task Manager</p>
                             <p className="font-epl text-xl">
                                 An application to manage a list of tasks you
                                 need to complete, or things that you want to do.

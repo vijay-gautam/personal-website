@@ -57,19 +57,15 @@ function Home() {
                 <div className="h-52 w-screen text-center flex items-center justify-center  p-4 sm:p-12 lg:p-10 selection:bg-selection selection:text-white">
                     <p className="font-epl  text-base max-w-xs   sm:max-w-xl sm:text-lg  lg:max-w-xl lg:text-xl dark:text-darkText">
                         Hi there, I'm{' '}
-                        <span className="text-default">Gautam</span> from , this
-                        is my little corner of the internet where I can show off
-                        some of the things I have done in my {yearsAlive} years
-                        or {addCommas(secondsAlive)} seconds on this rock.
+                        <span className="text-default">Gautam</span> from INDIA,
+                        this is my little corner of the internet where I can
+                        show off some of the things I have done in my{' '}
+                        {yearsAlive} years or {addCommas(secondsAlive)} seconds
+                        on this rock.
                     </p>
                 </div>
                 <div className="w-screen flex items-center justify-center p-10 sm:p-12 lg:p-10 ">
-                    <img
-                        //duration-1000 ease-in-out transform hover:-translate-y-1 hover:scale-105
-                        className="grow"
-                        src={feelingproud}
-                        alt="hero"
-                    />
+                    <img className="grow" src={feelingproud} alt="hero" />
                 </div>
             </div>
             <BounceArrow scrollRef={welcomeRef} />
