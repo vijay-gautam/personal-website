@@ -12,6 +12,8 @@ module.exports = {
                 dark: '#1a1919',
                 selection: '#ff5252',
                 darkText: '#bebebe',
+                twitter: '#00acee',
+                linkedin: '#0e76a8',
             },
         },
         height: {
