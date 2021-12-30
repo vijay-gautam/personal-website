@@ -7,7 +7,7 @@ function Welcome({ welcomeRef }) {
 
     return (
         <div
-            className="flex flex-col item-center justify-around sm:flex-row lg:flex-row dark:bg-dark w-screen"
+            className="flex flex-col item-center justify-around sm:flex-col lg:flex-row dark:bg-dark w-screen"
             ref={welcomeRef}
         >
             <div className="flex flex-col items-center text-center justify-center items-center dark:text-darkText lg:w-4/12 selection:bg-selection selection:text-white">
@@ -38,7 +38,7 @@ function Welcome({ welcomeRef }) {
                     suggestions then please{' '}
                     <a
                         className="text-default font-bold underline"
-                        href="https://twitter.com/messages/compose?recipient_id=1283026029452365826&text=Topic%3A%20ryangregory.dev"
+                        href="https://twitter.com/messages/compose?recipient_id=1428687646256107528&text=Topic%3A%20Your Website"
                         target="_blank"
                         rel="noopener noreferrer"
                     >

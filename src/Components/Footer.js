@@ -1,7 +1,10 @@
 import React from 'react'
 import { FaTwitter, FaGithub, FaLinkedin } from 'react-icons/fa'
+import { useNavigator } from '../Routing'
 
 function Footer() {
+    const nav = useNavigator()
+
     const openInNewTab = (url) => {
         const newWindow = window.open(url, '_blank', 'noopener,noreferrer')
         if (newWindow) newWindow.opener = null
@@ -12,19 +15,34 @@ function Footer() {
             <footer class="max-w-screen-2xl px-4 md:px-8 mx-auto">
                 <div class="flex flex-col items-center justify-around border-t border-base dark:border-darkText p-6">
                     <div class="flex flex-wrap justify-center md:justify-start gap-x-4 gap-y-2 md:gap-6 mb-4">
-                        <button class="font-epl text-base hover:text-default sm:text-lg  lg:text-lg p-3 transition duration-100">
+                        <button
+                            onClick={() => nav.navigateToAboutPage()}
+                            class="font-epl text-base hover:text-default sm:text-lg  lg:text-lg p-3 transition duration-100"
+                        >
                             About
                         </button>
-                        <button class="font-epl text-base hover:text-default sm:text-lg  lg:text-lg p-3 transition duration-100">
+                        <button
+                            onClick={() => nav.navigateToBlogPage()}
+                            class="font-epl text-base hover:text-default sm:text-lg  lg:text-lg p-3 transition duration-100"
+                        >
                             Blogs
                         </button>
-                        <button class="font-epl text-base hover:text-default sm:text-lg  lg:text-lg p-3 transition duration-100">
+                        <button
+                            onClick={() => nav.navigateToProjectsPage()}
+                            class="font-epl text-base hover:text-default sm:text-lg  lg:text-lg p-3 transition duration-100"
+                        >
                             Projects
                         </button>
-                        <button class="font-epl text-base hover:text-default sm:text-lg  lg:text-lg p-3 transition duration-100">
+                        <button
+                            onClick={() => nav.navigateToSiteStatsPage()}
+                            class="font-epl text-base hover:text-default sm:text-lg  lg:text-lg p-3 transition duration-100"
+                        >
                             Stats
                         </button>
-                        <button class="font-epl text-base hover:text-default sm:text-lg  lg:text-lg p-3 transition duration-100">
+                        <button
+                            onClick={() => nav.navigateToSitePlansPage()}
+                            class="font-epl text-base hover:text-default sm:text-lg  lg:text-lg p-3 transition duration-100"
+                        >
                             Site Plans
                         </button>
                     </div>

@@ -14,7 +14,7 @@ const routes = [
     },
     {
         path: '/blogs',
-        component: Home,
+        component: About,
         exact: true,
     },
     {

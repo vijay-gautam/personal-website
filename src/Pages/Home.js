@@ -18,7 +18,6 @@ function Home() {
     const [yearsAlive, setYearsAlive] = useState(ageDate)
 
     const welcomeRef = useRef()
-    const latestProjectRef = useRef()
 
     useEffect(() => {
         const getDifference = () => {
@@ -70,9 +69,7 @@ function Home() {
             </div>
             <BounceArrow scrollRef={welcomeRef} />
             <Welcome welcomeRef={welcomeRef} />
-            <BounceArrow scrollRef={latestProjectRef} />
-            <LatestProject latestProjectRef={latestProjectRef} />
-            <BounceArrow scrollRef={latestProjectRef} />
+            <LatestProject />
         </Fragment>
     )
 }
