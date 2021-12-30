@@ -8,8 +8,8 @@ import LatestProject from '../Components/home/LatestProject'
 import { withRouter } from 'react-router-dom'
 
 function Home() {
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     const t1 = new Date(2000, 9, 7, 0, 0, 0, 0)
-
     const t2 = new Date()
     const dif = t2.getTime() - t1.getTime()
     const ageDate = Math.abs(new Date(dif).getUTCFullYear() - 1970)
