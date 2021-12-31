@@ -11,14 +11,14 @@ function LatestProject() {
         <div className="flex flex-col dark:bg-dark ">
             <div className="w-screen flex flex-row item-center justify-center ">
                 <div className="flex flex-row item-center justify-between dark:text-darkText w-9/12 selection:bg-selection selection:text-white">
-                    <h1 className="font-epl text-base sm:text-lg  lg:text-5xl p-4 font-extrabold">
+                    <h1 className="font-epl text-xl sm:text-lg  lg:text-5xl p-4 font-extrabold">
                         Latest Projects
                     </h1>
                     <button
                         className="underline-btn"
                         onClick={() => nav.navigateToProjectsPage()}
                     >
-                        <pre className="font-epl text-base sm:text-lg  lg:text-3xl p-4 font-extrabold">
+                        <pre className="font-epl text-xl sm:text-lg  lg:text-3xl p-4 font-extrabold">
                             {'See all '}
                         </pre>
                         <FaArrowRight />
@@ -26,7 +26,7 @@ function LatestProject() {
                 </div>
             </div>
             <div className="mt-10 dark:text-darkText selection:bg-selection selection:text-white">
-                <div className="flex flex-col sm:flex-row lg:flex-row ">
+                <div className="flex flex-col sm:flex-row lg:flex-row justify-evenly">
                     <div className="flex flex-col w-screen lg:w-6/12 items-center justify-start">
                         <div className="w-10/12 grow space-y-4">
                             <img
@@ -34,8 +34,10 @@ function LatestProject() {
                                 alt="project hero"
                                 className="w-full"
                             />
-                            <p className="font-epl text-4xl">PdfEditor</p>
-                            <p className="font-epl text-xl">
+                            <p className="font-epl text-xl sm:text-4xl lg:text-4xl ">
+                                PdfEditor
+                            </p>
+                            <p className="font-epl text-sm sm:text-xl lg:text-xl">
                                 An application to merge your PDFs.
                             </p>
                         </div>
@@ -47,8 +49,10 @@ function LatestProject() {
                                 alt="project hero"
                                 className="w-full"
                             />
-                            <p className="font-epl text-4xl">Task Manager</p>
-                            <p className="font-epl text-xl">
+                            <p className="font-epl text-xl sm:text-4xl lg:text-4xl ">
+                                Task Manager
+                            </p>
+                            <p className="font-epl text-sm sm:text-xl lg:text-xl">
                                 An application to manage a list of tasks you
                                 need to complete, or things that you want to do.
                             </p>

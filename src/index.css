@@ -66,3 +66,12 @@ body::-webkit-scrollbar-button {
 .grow:hover {
     transform: scale(1.02);
 }
+
+.background {
+    background: url(./images/404background/background.webp) no-repeat center
+        center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}

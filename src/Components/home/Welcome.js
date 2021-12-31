@@ -11,7 +11,7 @@ function Welcome({ welcomeRef }) {
             ref={welcomeRef}
         >
             <div className="flex flex-col items-center text-center justify-center items-center dark:text-darkText lg:w-4/12 selection:bg-selection selection:text-white">
-                <h1 className="font-epl text-base sm:text-lg  lg:text-5xl p-4 font-extrabold">
+                <h1 className="font-epl text-xl sm:text-lg  lg:text-5xl p-4 font-extrabold">
                     Welcome
                 </h1>
                 <button

@@ -16,6 +16,12 @@ function Footer() {
                 <div class="flex flex-col items-center justify-around border-t border-base dark:border-darkText p-6">
                     <div class="flex flex-wrap justify-center md:justify-start gap-x-4 gap-y-2 md:gap-6 mb-4">
                         <button
+                            onClick={() => nav.navigateToHomePage()}
+                            class="font-epl text-base hover:text-default sm:text-lg  lg:text-lg p-3 transition duration-100"
+                        >
+                            Home
+                        </button>
+                        <button
                             onClick={() => nav.navigateToAboutPage()}
                             class="font-epl text-base hover:text-default sm:text-lg  lg:text-lg p-3 transition duration-100"
                         >
