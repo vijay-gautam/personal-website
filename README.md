@@ -10,3 +10,17 @@ https://www.jitbit.com/alexblog/256-targetblank---the-most-underestimated-vulner
 ## Icon Link
 
 https://undraw.co/illustrations
+
+### jsconfig.json code here
+
+```
+{
+    "compilerOptions": {
+        "baseUrl": "./",
+        "paths": {
+            "@components/*" : ["./src/Components/*"],
+            "@routing/*" : ["src/Routing/*","src/Routing/"]
+        }
+    }
+}
+```
