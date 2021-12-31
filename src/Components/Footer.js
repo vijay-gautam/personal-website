@@ -5,6 +5,9 @@ import { useNavigator } from '../Routing'
 function Footer() {
     const nav = useNavigator()
 
+    const t1 = new Date()
+    const t2 = t1.getFullYear()
+
     const openInNewTab = (url) => {
         const newWindow = window.open(url, '_blank', 'noopener,noreferrer')
         if (newWindow) newWindow.opener = null
@@ -78,7 +81,7 @@ function Footer() {
                 </div>
 
                 <div class="font-epl text-base text-center sm:text-lg  lg:text-lg p-3">
-                    © 2021 - Gautam Vijay. All rights reserved.
+                    © {t2} - Gautam Vijay. All rights reserved.
                 </div>
             </footer>
         </div>
