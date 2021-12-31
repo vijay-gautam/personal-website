@@ -1,5 +1,9 @@
 import Home from '../Pages/Home'
 import About from '../Pages/About'
+import Blogs from '../Pages/Blogs'
+import Projects from '../Pages/Projects'
+import SitePlans from '../Pages/SitePlans'
+import Stats from '../Pages/Stats'
 
 const routes = [
     {
@@ -14,12 +18,12 @@ const routes = [
     },
     {
         path: '/blogs',
-        component: About,
+        component: Blogs,
         exact: true,
     },
     {
         path: '/projects',
-        component: Home,
+        component: Projects,
         exact: true,
     },
     {
@@ -29,12 +33,12 @@ const routes = [
     },
     {
         path: '/stats',
-        component: Home,
+        component: Stats,
         exact: true,
     },
     {
         path: '/plans',
-        component: Home,
+        component: SitePlans,
         exact: true,
     },
 ]
