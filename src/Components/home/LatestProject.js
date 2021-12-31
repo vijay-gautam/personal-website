@@ -7,6 +7,12 @@ import { useNavigator } from '../../Routing'
 
 function LatestProject() {
     const nav = useNavigator()
+
+    const openInNewTab = (url) => {
+        const newWindow = window.open(url, '_blank', 'noopener,noreferrer')
+        if (newWindow) newWindow.opener = null
+    }
+
     return (
         <div className="flex flex-col dark:bg-dark ">
             <div className="w-screen flex flex-row item-center justify-center ">
@@ -28,7 +34,12 @@ function LatestProject() {
             <div className="mt-10 dark:text-darkText selection:bg-selection selection:text-white">
                 <div className="flex flex-col sm:flex-row lg:flex-row justify-evenly">
                     <div className="flex flex-col w-screen lg:w-6/12 items-center justify-start">
-                        <div className="w-10/12 grow space-y-4">
+                        <div
+                            onClick={() =>
+                                openInNewTab('https://pdf-actions.vercel.app/')
+                            }
+                            className="w-10/12 grow space-y-4 cursor-pointer"
+                        >
                             <img
                                 src={project1}
                                 alt="project hero"
@@ -43,7 +54,14 @@ function LatestProject() {
                         </div>
                     </div>
                     <div className="flex flex-col w-screen lg:w-6/12 items-center justify-start">
-                        <div className="w-10/12 grow space-y-4">
+                        <div
+                            onClick={() =>
+                                openInNewTab(
+                                    'https://github.com/vijay-gautam/ToDo-List'
+                                )
+                            }
+                            className="w-10/12 grow space-y-4 cursor-pointer"
+                        >
                             <img
                                 src={project2}
                                 alt="project hero"
