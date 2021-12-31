@@ -1,6 +1,7 @@
 # To implement
 
-Alias , jsconfig
+->Alias , jsconfig
+->Add Mdx for blogs or add hashnode implementation
 
 ## Imp article
 
