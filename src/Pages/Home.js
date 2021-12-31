@@ -50,7 +50,7 @@ function Home() {
     return (
         <Fragment>
             <Helmet>
-                <title>home | gautamvijay.dev</title>
+                <title>home | gautamvijay.in</title>
             </Helmet>
             <div className="flex flex-col w-screen dark:bg-dark">
                 <div className="h-52 w-screen text-center flex items-center justify-center  p-4 sm:p-12 lg:p-10 selection:bg-selection selection:text-white">
