@@ -4,6 +4,7 @@ import routes from './Routing/routes'
 import Wrapper from './Components/Wrapper'
 import { ThemeProvider } from './theme/themeContext'
 import PageNotFound from './Pages/PageNotFound'
+import ScrollToTop from './Components/ScrollToTop'
 // const queryClient = new QueryClient();
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
             <BrowserRouter>
                 <ThemeProvider>
                     <Wrapper>
+                        <ScrollToTop />
                         <Switch>
                             {routes.map((route) => (
                                 <Route
